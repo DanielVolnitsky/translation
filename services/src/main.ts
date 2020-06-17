@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core'
 import { Logger } from '@nestjs/common'
-import * as winston from 'winston'
+import { transports } from 'winston'
 import { WinstonModule } from 'nest-winston'
 import { AppModule } from './app.module'
 
@@ -9,8 +9,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     logger: WinstonModule.createLogger({
       transports: [
-        new winston.transports.File({ filename: 'info.log', level: 'info' }),
-        new winston.transports.File({ filename: 'error.log', level: 'error' })
+        new transports.File({ filename: 'info.log', level: 'info' }),
+        new transports.File({ filename: 'error.log', level: 'error' })
       ]
     })
   })
