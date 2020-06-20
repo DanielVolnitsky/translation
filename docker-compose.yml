@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  translation-service:
+    image: translation-service
+    container_name: translation-service
+    ports:
+      - 3000:3000
+#    env_file:
+#      - .env
