@@ -9,8 +9,7 @@ export const appConfig = {
   logger: WinstonModule.createLogger({
     format: logFormatFile,
     transports: [
-      new transports.File({ filename: 'logs/info.log', level: 'info' }),
-      new transports.File({ filename: 'logs/error.log', level: 'error' }),
+      new transports.File({ filename: 'logs/logs.log' }),
       new transports.Console({ format: logFormatConsole })
     ]
   })
