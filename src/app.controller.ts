@@ -9,7 +9,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    AppController.logger.debug('Get request to / route')
+    AppController.logger.log('About to greet a user!')
     return this.appService.getHello()
   }
 }
