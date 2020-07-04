@@ -29,6 +29,7 @@
     "@nestjs/config": "^0.5.0",
     "@nestjs/core": "^7.2.0",
     "@nestjs/platform-express": "^7.2.0",
+    "axios": "^0.19.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4"
@@ -74,10 +75,10 @@
     "coverageDirectory": "../coverage",
     "coverageThreshold": {
       "global": {
-        "statements": 100,
-        "branches": 100,
-        "functions": 100,
-        "lines": 100
+        "statements": 70,
+        "branches": 70,
+        "functions": 70,
+        "lines": 70
       }
     },
     "testEnvironment": "node"
