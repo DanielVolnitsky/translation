@@ -1,9 +1,8 @@
 {
-  "name": "translation",
+  "name": "node",
   "version": "0.0.1",
-  "description": "",
   "author": "Jython",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",

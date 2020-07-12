@@ -1,0 +1,15 @@
+{
+  "name": "translation",
+  "version": "1.0.0",
+  "description": "translation",
+  "main": "index.js",
+  "scripts": {
+    "start:node": "lerna run start:dev --scope=node --parallel",
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test --parallel"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
