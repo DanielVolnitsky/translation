@@ -1,4 +1,5 @@
 definition:
   provider:
     owl:
+      definition-uri: https://owlbot.info/api/v4/dictionary/
       token: #OWL API token
