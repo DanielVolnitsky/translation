@@ -10,7 +10,7 @@ import waytoodanny.definition.usecase.GetWordInformation
 @RestController
 class WordInformationController constructor(val wordInformationProvider: GetWordInformation) {
 
-    @GetMapping("/{word}/definition")
+    @GetMapping("/{word}/details")
     fun greeting(@PathVariable word: String): ResponseEntity<WordInformation> =
             wordInformationProvider.wordInformation(word)
                     .fold(

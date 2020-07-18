@@ -1,8 +1,9 @@
 package waytoodanny.definition.infrastructure.owl
 
-data class OwlWordInformationDTO(val word: String, val definitions: List<Definition>) {
+data class OwlWordInformationDTO(var word: String = "",
+                                 var definitions: List<Definition> = emptyList()) {
 
-    data class Definition(val example: String,
-                          val definition: String,
-                          val type: String)
+    data class Definition(var example: String = "",
+                          var definition: String = "",
+                          var type: String = "")
 }

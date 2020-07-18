@@ -1,6 +1,5 @@
 package waytoodanny.definition.infrastructure.owl
 
-import waytoodanny.definition.configuration.OwlConfiguration
 import java.net.URI
 import java.net.http.HttpRequest
 
